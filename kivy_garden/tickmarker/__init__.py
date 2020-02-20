@@ -215,6 +215,7 @@ class TickMarker(Widget):
                 self.canvas.remove_group(str('TickMarker%d' % id(self)))
                 self._mesh = None
 
+
 if __name__ == '__main__':
     from kivy.app import App
     from kivy.uix.gridlayout import GridLayout
