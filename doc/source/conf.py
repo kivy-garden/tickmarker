@@ -16,7 +16,7 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'Cython flower'
+project = 'Tickmarker'
 copyright = '2019, Kivy'
 author = 'Kivy'
 

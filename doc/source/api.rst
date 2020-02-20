@@ -1,9 +1,9 @@
 
 ########################
-  The Cython Flower API
+  The Tickmarker API
 ########################
 
 .. toctree::
    :maxdepth: 1
 
-   flower.rst
+   tickmarker.rst

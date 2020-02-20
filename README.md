@@ -1,18 +1,18 @@
-kivy-garden demo of cython flower
+Tickmarker
 ==================================
 
-[![Github Build Status](https://github.com/kivy-garden/cython_flower/workflows/Garden%20flower/badge.svg)](https://github.com/kivy-garden/cython_flower/actions)
+[![Github Build Status](https://github.com/kivy-garden/tickmarker/workflows/Tickmarker/badge.svg)](https://github.com/kivy-garden/tickmarker/actions)
 
-A kivy garden flower that shows how to add flowers that requires cython compilation.
+TickMarker widget, used to mark intervals.
 
-See https://kivy-garden.github.io/cython_flower/ for the rendered flower docs.
+See https://kivy-garden.github.io/tickmarker/ for the rendered flower docs.
 
 Please see the garden [instructions](https://kivy-garden.github.io) for how to use kivy garden flowers.
 
 Flower information
 -------------------
 
-tickmarker exports the `TickMarker` widget, which places ticks in the center
+Tickmarker exports the `TickMarker` widget, which places ticks in the center
 of the widget so that when combined with another widget e.g. a slider it
 marks intervals. TickMarker supports horizontal and vertical orientation,
 minor/major ticks and log10 representation.
@@ -56,7 +56,7 @@ Install
 
 To install with pip::
 
-    pip install kivy_garden.cython_flower
+    pip install kivy_garden.tickmarker
 
 To build or re-build locally::
 

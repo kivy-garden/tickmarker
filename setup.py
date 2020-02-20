@@ -11,14 +11,13 @@ from setuptools import setup, Extension, find_namespace_packages
 # __init__.py, which would import the cython-compiled code. But that has
 # not been compiled yet so it would fail. So import only _version.py
 filename = join(
-    dirname(__file__), 'kivy_garden', 'cython_flower', '_version.py')
-# change this                             ^^^^^^^^
+    dirname(__file__), 'kivy_garden', 'tickmarker', '_version.py')
 locals = {}
 with open(filename, "rb") as fh:
     exec(compile(fh.read(), filename, 'exec'), globals(), locals)
 __version__ = locals['__version__']
 
-URL = 'https://github.com/kivy-garden/cython_flower'  # <-- change this
+URL = 'https://github.com/kivy-garden/tickmarker'  # <-- change this
 
 
 platform = sys.platform
@@ -106,7 +105,7 @@ if can_use_cython:
 else:
     mod_suffix = '.c'
 
-mods = ['cython_flower/_compute']  # <-- change this
+mods = ['tickmarker/ticks']
 
 ext_modules = [Extension(
     'kivy_garden.' + src_file.replace('/', '.'),
@@ -125,9 +124,9 @@ if declare_cython:
     setup_requires.append('cython')
 
 setup(
-    name='kivy_garden.cython_flower',  # <-- change this
+    name='kivy_garden.tickmarker',
     version=__version__,
-    description='A kivy garden cython flower demo.',
+    description='TickMarker widget, used to mark intervals.',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url=URL,

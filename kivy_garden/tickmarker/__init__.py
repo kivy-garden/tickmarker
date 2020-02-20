@@ -42,10 +42,10 @@ of from min, max, and value.
 
 '''
 __all__ = ('TickMarker', )
-__version__ = '2.0'
+
+from ._version import __version__
 
 import kivy
-kivy.require('1.4.0')
 from kivy.uix.widget import Widget
 from kivy.properties import NumericProperty, AliasProperty, OptionProperty, \
         ReferenceListProperty, BoundedNumericProperty, ObjectProperty, \
@@ -53,7 +53,7 @@ from kivy.properties import NumericProperty, AliasProperty, OptionProperty, \
 from kivy.clock import Clock
 from math import log10
 from kivy.graphics import Mesh
-from ticks import compute_ticks
+from .ticks import compute_ticks
 
 
 class TickMarker(Widget):

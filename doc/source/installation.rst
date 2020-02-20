@@ -21,21 +21,21 @@ Installation
 
 Please see the `garden docs <https://kivy-garden.github.io/>`_ for full installation instructions.
 
-If the flower maintainer has uploaded the flower to
+If the tickmarker maintainer has uploaded tickmarker to
 `pypi <https://pypi.org/>`_, you can just install it with
-`pip install kivy_garden.flower`.
+`pip install kivy_garden.tickmarker`.
 
-You can install flower master directly from github with::
+You can install tickmarker master directly from github with::
 
-    python -m pip install https://github.com/kivy-garden/flower/archive/master.zip
+    python -m pip install https://github.com/kivy-garden/tickmarker/archive/master.zip
 
 Look under the repository's releases tab if you'd like to install a specific
-release or a pre-compiled wheel, if the flower has any. Then use the url with
+release or a pre-compiled wheel, if tickmarker has any. Then use the url with
 `pip`.
 
 Or you can automatically install it using garden's pypi server with::
 
-    python -m pip install kivy_garden.flower --extra-index-url https://kivy-garden.github.io/simple/
+    python -m pip install kivy_garden.tickmarker --extra-index-url https://kivy-garden.github.io/simple/
 
 To permanently add our garden server to your pip configuration so that you
 don't have to specify it with `--extra-index-url`, add::
