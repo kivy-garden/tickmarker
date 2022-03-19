@@ -119,10 +119,6 @@ ext_modules = [Extension(
 for e in ext_modules:
     e.cython_directives = {"embedsignature": True}
 
-setup_requires = []
-if declare_cython:
-    setup_requires.append('cython')
-
 setup(
     name='kivy_garden.tickmarker',
     version=__version__,
@@ -145,8 +141,7 @@ setup(
     keywords='Kivy kivy-garden',
 
     packages=find_namespace_packages(include=['kivy_garden.*']),
-    setup_requires=setup_requires,
-    install_requires=[],
+    install_requires=['kivy'],
     extras_require={
         'dev': ['pytest>=3.6', 'wheel', 'pytest-cov', 'pytest-asyncio',
                 'sphinx_rtd_theme'],
